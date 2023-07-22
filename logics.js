@@ -1,6 +1,5 @@
-
-
-
+// Seleziona il pulsante
+var toggleButton = document.querySelector("#theme-toggle-button");
 
 // Aggiungi questo all'inizio del tuo file JavaScript
 if (localStorage.getItem("theme") === "dark") {
