@@ -7,7 +7,17 @@
 </head>
 <body>
   <button id="theme-toggle-button">Cambia Tema</button>
-  <p>Hello World</p>
+  <div id="login">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button id="submit">Submit</button>
+    <p id="error-message" style="color: red; display: none;"></p>
+  </div>
+  <div id="content" style="display: none;">
+    <p>Hello World</p>
+  </div>
   <script src="/logics.js"></script>
 </body>
 </html>
