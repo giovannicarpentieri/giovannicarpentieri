@@ -1,18 +1,97 @@
 :root {
-  --color-background-light: #ffffff;
+  --color-background-light: #f5f5f5;
   --color-text-light: #000000;
 
-  --color-background-dark: #000000;
+  --color-background-dark: #161616;
   --color-text-dark: #ffffff;
 }
 
+p {
+  margin: 0;
+}
 
 body {
   background-color: var(--color-background-light);
   color: var(--color-text-light);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body.dark-mode {
   background-color: var(--color-background-dark);
   color: var(--color-text-dark);
+}
+
+.maintenance-message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.maintenance-message {
+  font-size: 3em;
+  text-align: center;
+}
+
+.error-message {
+  color: rgb(207, 24, 24);
+}
+
+#theme-toggle-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.login-box {
+  display: flex;
+  gap: 10px;
+}
+
+#theme-toggle-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.input-field {
+  height: 30px;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #2f2f2f;
+  color: #8478ff;
+  border: none;
+}
+
+.standard-button {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #251d7d;
+  border: none;
+}
+
+.standard-button:hover {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #372cab;
+  border: none;
+}
+
+.standard-button:focus {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #1c1660;
+  border: none;
 }

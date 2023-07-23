@@ -4,6 +4,8 @@ var submitButton = document.querySelector("#submit");
 var loginDiv = document.querySelector("#login");
 var contentDiv = document.querySelector("#content");
 var errorMessage = document.querySelector("#error-message");
+var lightIcon = document.querySelector("#light-icon");
+var darkIcon = document.querySelector("#dark-icon");
 
 // Funzione per cambiare il tema
 function changeTheme() {
@@ -14,6 +16,15 @@ function changeTheme() {
       theme = "dark";
   }
   localStorage.setItem("theme", theme);
+
+  // Alterna le icone
+  if (theme === "dark") {
+    lightIcon.style.display = "none";
+    darkIcon.style.display = "block";
+  } else {
+    lightIcon.style.display = "block";
+    darkIcon.style.display = "none";
+  }
 }
 
 // Imposta il tema iniziale
@@ -29,8 +40,9 @@ submitButton.addEventListener("click", function() {
   var username = document.querySelector("#username").value;
   var password = document.querySelector("#password").value;
 
-  if (username === "myUsername" && password === "myPassword") {
+  if (username === "gianni" && password === "carp") {
     loginDiv.style.display = "none";
+    maintenance.style.display = "none";
     contentDiv.style.display = "block";
   } else {
     errorMessage.style.display = "block";

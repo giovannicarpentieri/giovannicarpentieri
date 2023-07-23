@@ -1,23 +1,45 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giovanni Carpentieri</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button id="theme-toggle-button">Cambia Tema</button>
-  <div id="login">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <button id="submit">Submit</button>
-    <p id="error-message" style="color: red; display: none;"></p>
+
+  <button id="theme-toggle-button">
+    x
+    <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+    <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12v0a9 9 0 01-18 0 9 9 0 0118 0z" />
+    </svg>
+  </button>
+
+  <div class="maintenance-message-wrapper" id="maintenance">
+   <p class="maintenance-message">Website Under Construction</p>
+
+  <div class="login-box" id="login">
+      <input class="input-field" type="text" id="username" name="username" placeholder="Username">
+      <input class="input-field" type="password" id="password" name="password" placeholder="Password">
+  </div>
+
+  <div>
+      <button class="standard-button" id="submit">Login</button>
+  </div>
+
+  <div>
+      <p id="error-message" class="error-message"></p>
+  </div>  
+
   </div>
   <div id="content" style="display: none;">
     <p>Hello World</p>
   </div>
   <script src="/logics.js"></script>
 </body>
-</html>
+</!DOCTYPE>
