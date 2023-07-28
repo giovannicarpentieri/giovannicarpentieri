@@ -5,6 +5,32 @@
   --main-accent-darker: #6153fe;
 }
 
+/* Questo sarà applicato alla barra di scorrimento verticale */
+::-webkit-scrollbar {
+  width: 4px;   /* Larghezza della barra di scorrimento verticale */
+}
+
+/* Questo sarà applicato alla barra di scorrimento orizzontale */
+::-webkit-scrollbar {
+  height: 12px;   /* Altezza della barra di scorrimento orizzontale */
+}
+
+/* Questo sarà applicato al "tracciato" o sfondo della barra di scorrimento */
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+/* Questo sarà applicato alla "maniglia" o parte mobile della barra di scorrimento */
+::-webkit-scrollbar-thumb {
+  background: var(--main-accent-darker); 
+  border-radius: 100px;
+}
+
+/* Cambia colore della "maniglia" al passaggio del mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-accent);
+}
+
 p {
   margin: 0;
 }
@@ -69,29 +95,124 @@ header {
 }
 
 .main-content {
+  background-color: var(--main-accent-darker);
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  padding: 20px 0px 20px 0px;
 }
 
 .welcome-block {
   height: 180px;
   display: flex;
-  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
 }
 
 .main-message {
   font-size: 2.5rem;
-  padding: 35px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   font-weight: 700;
 }
 
 .sub-message {
   font-size: 1.2rem;
 }
+
+.greetings-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.greetings {
+  font-size: 1.6rem;
+  padding: 0px 0px 25px 0px;
+  font-weight: 700;
+}
+
+.greeting-message {
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+.standard-button {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #251d7d;
+  border: none;
+}
+
+.standard-button:hover {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #372cab;
+  border: none;
+}
+
+.standard-button:focus {
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  color: #8478ff;
+  background-color: #1c1660;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .welcome-block {
+    height: 300px;
+    width: 90%;
+  }  
+  .main-message {
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 0px 0px 20px 0px;
+    font-weight: 700;
+  }
+  
+  .sub-message {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .greetings-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .greetings {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+    font-weight: 700;
+  }
+  .greeting-message {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+}
+
 
 /* .maintenance-message-wrapper {
   display: flex;
@@ -137,30 +258,3 @@ header {
   color: #8478ff;
   border: none;
 } */
-
-.standard-button {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #251d7d;
-  border: none;
-}
-
-.standard-button:hover {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #372cab;
-  border: none;
-}
-
-.standard-button:focus {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #1c1660;
-  border: none;
-}
