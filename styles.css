@@ -1,9 +1,8 @@
 :root {
-  --color-background-light: #f5f5f5;
-  --color-text-light: #000000;
-
-  --color-background-dark: #161616;
-  --color-text-dark: #ffffff;
+  --color-background: #161616;
+  --color-text: #f6f6f6;
+  --main-accent: #8478ff;
+  --main-accent-darker: #6153fe;
 }
 
 p {
@@ -11,8 +10,8 @@ p {
 }
 
 body {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-dark);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -20,25 +19,81 @@ body {
 }
 
 header {
-  background-color: #1c1660;
-  height: 80px;
-}
-
-.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px 20px 10px 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+}
+
+.logo-svg {
+  transition: 0.5s;
+  fill: var(--main-accent);
+}
+
+.logo-svg:hover {
+  fill: var(--main-accent-darker);
+  cursor: pointer;
 }
 
 .nav-bar {
   display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav-bar-button {
+  transition: 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 2px solid var(--main-accent);
+  border-radius: 100px;
+  background: none;
+  color: var(--main-accent);
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-bar-button:hover {
+  border: 2px solid var(--main-accent-darker);
+  color: var(--main-accent-darker);
 }
 
 .main-content {
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
 
-.maintenance-message-wrapper {
+.welcome-block {
+  height: 180px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-message {
+  font-size: 2.5rem;
+  padding: 35px 0px 20px 0px;
+  font-weight: 700;
+}
+
+.sub-message {
+  font-size: 1.2rem;
+}
+
+/* .maintenance-message-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,41 +102,41 @@ header {
   margin: auto;
   height: 100%;
   width: 100%;
-}
+} */
 
-.maintenance-message {
+/* .maintenance-message {
   font-size: 3em;
   text-align: center;
-}
+} */
 
-.error-message {
+/* .error-message {
   color: rgb(207, 24, 24);
-}
+} */
 
-#theme-toggle-button {
+/* #theme-toggle-button {
   background: transparent;
   border: none;
   cursor: pointer;
-}
+} */
 
-.login-box {
+/* .login-box {
   display: flex;
   gap: 10px;
-}
+} */
 
-#theme-toggle-button svg {
+/* #theme-toggle-button svg {
   width: 24px;
   height: 24px;
-}
+} */
 
-.input-field {
+/* .input-field {
   height: 30px;
   border-radius: 30px;
   padding: 15px;
   background-color: #2f2f2f;
   color: #8478ff;
   border: none;
-}
+} */
 
 .standard-button {
   height: 30px;
