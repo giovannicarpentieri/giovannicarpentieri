@@ -11,17 +11,31 @@ p {
 }
 
 body {
-  background-color: var(--color-background-light);
-  color: var(--color-text-light);
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body.dark-mode {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-dark);
+header {
+  background-color: #1c1660;
+  height: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.main-content {
+  align-content: center;
+  justify-content: center;
 }
 
 .maintenance-message-wrapper {

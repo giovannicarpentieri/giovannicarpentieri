@@ -9,37 +9,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        LOGO
+      </div>
+      <nav class="nav-bar">
+        <li>Home</li>
+        <li>Chi sono</li>
+        <li>Portfolio</li>
+      </nav>
+    </div>
+  </header>
+<!--Begin: Maintenance Block-->
+<div class="maintenance-message-wrapper" id="maintenance">
 
-  <button id="theme-toggle-button">
-    x
-    <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-    <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12v0a9 9 0 01-18 0 9 9 0 0118 0z" />
-    </svg>
-  </button>
+  <p class="maintenance-message">Website Under Construction.</p>
 
-  <div class="maintenance-message-wrapper" id="maintenance">
-   <p class="maintenance-message">Website Under Construction.</p>
+ <div class="login-box" id="login">
+     <input class="input-field" type="text" id="username" name="username" placeholder="Username">
+     <input class="input-field" type="password" id="password" name="password" placeholder="Password">
+ </div>
 
-  <div class="login-box" id="login">
-      <input class="input-field" type="text" id="username" name="username" placeholder="Username">
-      <input class="input-field" type="password" id="password" name="password" placeholder="Password">
-  </div>
+ <div>
+     <button class="standard-button" id="submit">Login</button>
+ </div>
 
-  <div>
-      <button class="standard-button" id="submit">Login</button>
-  </div>
+ <div>
+     <p id="error-message" class="error-message"></p>
+ </div>  
 
-  <div>
-      <p id="error-message" class="error-message"></p>
-  </div>  
-
-  </div>
-  <div id="content" style="display: none;">
+</div>
+<!--End: Maintenance Block-->
+  <div class="main-content" id="content" style="display: none;">
     <p>Hello World</p>
   </div>
   <script src="/logics.js"></script>
 </body>
-</!DOCTYPE>
