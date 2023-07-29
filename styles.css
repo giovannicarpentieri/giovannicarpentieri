@@ -75,7 +75,19 @@ header {
 .nav-bar {
   display: flex;
   align-items: center;
+  gap: 16px;
   padding: 10px 10px 10px 10px;
+}
+
+.nav-bar a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.8rem;
+}
+
+.nav-bar a:hover {
+  color: var(--main-accent-darker);
 }
 
 .nav-bar-button {
@@ -222,7 +234,7 @@ header {
   .greetings {
     font-size: 1.6rem;
     text-align: center;
-    padding: 0px 0px 25px 0px;
+    padding: 0px 0px 45px 0px;
     font-weight: 700;
   }
   .greeting-message {
