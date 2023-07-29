@@ -3,8 +3,8 @@
   --color-background-ligther: #303030;
   --color-background-white: #fff;
   --color-text: #f6f6f6;
-  --main-accent: #8478ff;
-  --main-accent-darker: #6153fe;
+  --main-accent: #6153fe;
+  --main-accent-lighter: #8176ff;
   /*09eb1c un bel verde*/ 
 }
 
@@ -25,13 +25,13 @@
 
 /* Questo sarà applicato alla "maniglia" o parte mobile della barra di scorrimento */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-accent-darker); 
+  background: var(--main-accent); 
   border-radius: 100px;
 }
 
 /* Cambia colore della "maniglia" al passaggio del mouse */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--main-accent);
+  background: var(--main-accent-lighter);
 }
 
 p {
@@ -68,7 +68,7 @@ header {
 }
 
 .logo-svg:hover {
-  fill: var(--main-accent-darker);
+  fill: var(--main-accent-lighter);
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 .nav-bar a:hover {
-  color: var(--main-accent-darker);
+  color: var(--main-accent-lighter);
 }
 
 .nav-bar-button {
@@ -105,12 +105,12 @@ header {
 }
 
 .nav-bar-button:hover {
-  border: 2px solid var(--main-accent-darker);
-  color: var(--main-accent-darker);
+  border: 2px solid var(--main-accent-lighter);
+  color: var(--main-accent-lighter);
 }
 
 .main-content {
-  background-color: var(--main-accent-darker);
+  background-color: var(--main-accent);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -203,7 +203,7 @@ header {
 }
 
 .card p span {
-  color: var(--main-accent-darker);
+  color: var(--main-accent);
   font-weight: 700;
 }
 
