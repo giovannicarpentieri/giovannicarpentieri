@@ -1,8 +1,11 @@
 :root {
   --color-background: #161616;
+  --color-background-ligther: #303030;
+  --color-background-white: #fff;
   --color-text: #f6f6f6;
   --main-accent: #8478ff;
   --main-accent-darker: #6153fe;
+  /*09eb1c un bel verde*/ 
 }
 
 /* Questo sarà applicato alla barra di scorrimento verticale */
@@ -98,6 +101,7 @@ header {
   background-color: var(--main-accent-darker);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
   padding: 20px 0px 20px 0px;
@@ -113,6 +117,7 @@ header {
   align-items: center;
   width: 60%;
   margin: auto;
+  text-align: center;
 }
 
 .main-message {
@@ -133,6 +138,8 @@ header {
   flex-direction: column;
   align-items: center;
   width: 60%;
+  text-align: center;
+  height: 400px;
 }
 
 .greetings {
@@ -144,34 +151,48 @@ header {
 .greeting-message {
   font-size: 1.2rem;
   line-height: 2.1rem;
-  text-align: center;
 }
 
-.standard-button {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #251d7d;
-  border: none;
+
+.over-bg-main-content {
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.standard-button:hover {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #372cab;
-  border: none;
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
-.standard-button:focus {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
-  color: #8478ff;
-  background-color: #1c1660;
-  border: none;
+.card {
+  width: 80%;
+  background-color:var(--color-background) ;
+  border: 1px solid var(--color-background-ligther);
+  padding: 30px;
+}
+
+.radius-top{
+  border-radius: 12px 12px 0px 0px;
+}
+
+.radius-bottom{
+  border-radius: 0px 0px 12px 12px;
+}
+
+.card p {
+  line-height: 1.8rem;
+}
+
+.card p span {
+  color: var(--main-accent-darker);
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,14 +202,12 @@ header {
     width: 90%;
   }  
   .main-message {
-    text-align: center;
     font-size: 2.0rem;
     padding: 0px 0px 20px 0px;
     font-weight: 700;
   }
   
   .sub-message {
-    text-align: center;
     font-size: 1.2rem;
   }
   .greetings-block {
