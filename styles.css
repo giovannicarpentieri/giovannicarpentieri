@@ -133,7 +133,7 @@ header {
 .greetings-block {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
   align-items: center;
