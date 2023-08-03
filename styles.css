@@ -29,7 +29,7 @@
 
 /* Questo sarà applicato alla "maniglia" o parte mobile della barra di scorrimento */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-accent); 
+  background: var(--main-accent-lighter); 
   border-radius: 100px;
 }
 
@@ -64,6 +64,11 @@ body {
     linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
                           var(--c1) 0 calc(500%/6),var(--c2) 0);
   background-size: calc(1.732*var(--s)) var(--s);
+}
+
+footer {
+  height: 250px;
+  background-color: var(--main-accent);
 }
 
 header {
@@ -126,6 +131,28 @@ header {
 .nav-bar-button:hover {
   border: 2px solid var(--main-accent-lighter);
   color: var(--main-accent-lighter);
+}
+
+.button {
+  transition: 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--main-accent);
+  color: var(--color-background-dark-1);
+  width: 200px;
+  height: 58px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button:focus {
+  transform: scale(0.9);
 }
 
 .main-content {
@@ -227,6 +254,41 @@ header {
   font-weight: 700;
 }
 
+footer {
+  padding: 15px;
+}
+
+.last-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 220px;
+  background-color: var(--color-background-dark-1);
+  border: 1px solid var(--color-background-dark-3);
+  text-align: center;
+  border-radius: 16px;
+  margin-top: -40px;;
+  padding: 30px;
+}
+
+.last-card p:first-child {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.last-card p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
 @media screen and (max-width: 768px) {
 
   .welcome-block {
@@ -263,6 +325,6 @@ header {
     text-align: center;
   }
   .cards-wrapper {
-    width: 80%;
+    width: 90%;
   }
 }
