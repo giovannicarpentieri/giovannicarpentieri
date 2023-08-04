@@ -325,6 +325,9 @@ footer {
     text-align: center;
   }
   .cards-wrapper {
+    width: 83%;
+  }
+  .card {
     width: 90%;
   }
   .last-card {
