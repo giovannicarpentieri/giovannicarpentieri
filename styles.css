@@ -268,10 +268,6 @@ header {
   font-weight: 700;
 }
 
-footer {
-  padding: 0px;
-}
-
 .last-card-wrapper {
   display: flex;
   justify-content: center;
