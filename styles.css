@@ -269,7 +269,7 @@ header {
 }
 
 footer {
-  padding: 15px;
+  padding: 0px;
 }
 
 .last-card-wrapper {
@@ -339,12 +339,12 @@ footer {
     text-align: center;
   }
   .cards-wrapper {
-    width: 83%;
+    width: 100%;
   }
   .card {
-    width: 90%;
+    width: 300px;
   }
   .last-card {
-    width: 90%;
+    width: 300px;
   }
 }
