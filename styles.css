@@ -338,9 +338,9 @@ header {
     width: 100%;
   }
   .card {
-    width: 300px;
+    width: 80%;
   }
   .last-card {
-    width: 300px;
+    width: 80%;
   }
 }
