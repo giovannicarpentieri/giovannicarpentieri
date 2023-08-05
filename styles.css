@@ -67,7 +67,7 @@ body {
 }
 
 footer {
-  height: 250px;
+  /* height: 250px; */
   background-color: var(--main-accent);
 }
 
@@ -297,6 +297,18 @@ header {
 .last-card p {
   font-size: 1rem;
   margin-bottom: 24px;
+}
+.bottom-infos {
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 0.8rem;
+}
+
+.bottom-infos span {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
